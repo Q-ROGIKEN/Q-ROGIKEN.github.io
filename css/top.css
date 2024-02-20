@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+/* コンテナ */
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container h3{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.container_extask h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container_extask .task_block{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container_extask .task{
+    width: 380;
+
+}
+
+.container_extask .task img{
+    margin-bottom: 20px;
+}
+
+.container_extask .task .ttl{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container_extask .task .explain{
+    margin-bottom: 20px;
+}
+
+

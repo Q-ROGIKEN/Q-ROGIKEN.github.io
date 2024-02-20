@@ -1,0 +1,39 @@
+
+@charset "UTF-8";
+
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container .container_member h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container .container_member .member_block{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .container_member .member_block .member{
+    width: 100;
+}
+
+.container .container_member .member_block .member img{
+    margin-bottom: 20px;
+}
+
+.container .container_member .member_block .member .ttl{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .container_member .member_block .member .explain{
+    margin-bottom: 20px;
+}

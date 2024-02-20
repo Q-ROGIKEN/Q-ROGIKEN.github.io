@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* ヘッダー */
+body{
+    font-family: "Hiragino Kaku Gothic Pro","Meiro",sans-serif;
+    font-size: 15px;
+    border-top: 10px solid #e0a3d8ee !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(110, 31, 128);
+}
+
+
+.logo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logo img{
+    display: inline-block;
+    width: 1200px;
+    height: 80px;
+}
+
+.w_innner{
+    width: 1200px;
+    margin: 0 auto;
+    background: #e0a3d8ee;
+}
+
+.header ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+}
+
+.header ul li{
+    width: 300px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+.header ul li:first-child{
+    border-left: 1px solid #ddd;
+}
+
+.header ul li a{
+    display: block;
+}
+
+.header_img{
+    text-align: center;
+    
+}
+
+.header_img img{
+    display: inline-block;
+    width: 1200px;
+    height: 200px;
+}
+
+
+/* フッター */
+.footer .copy{
+    text-align: center;
+    background-color: pink;
+    color:black;
+    padding: 5px 0 5px
+}
