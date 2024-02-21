@@ -12,14 +12,12 @@
     margin-bottom: 20px;
 }
 
-.container .container_task .task_block {
-    margin-left: 100px;
-}
 
 .container .container_task .task_block .task {
-    width: 380px;
+    width: auto;
     /* 幅の指定に単位を追加 */
     margin-bottom: 10px;
+    display:inline-block;
 }
 
 .container .container_task .task_block .task img {
@@ -63,7 +61,6 @@
         display: block;
     }
 
-    .container .container_task h2,
     .container .container_task .task_block .task .ttl,
     .container .container_task .task_block .task .explain {
         text-align: left;

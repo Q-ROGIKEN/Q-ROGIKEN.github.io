@@ -20,12 +20,14 @@
 }
 
 .container .container_member .member_block .member {
-    width: 100px;
-    /* 単位を追加 */
+    width: 270px;
+    padding: 20px;
 }
 
 .container .container_member .member_block .member img {
     margin-bottom: 20px;
+    width: 270px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -53,7 +55,7 @@
     }
 
     .container .container_member .member_block .member {
-        width: auto;
+        width: 270px;
         /* 幅を自動調整に変更 */
         margin-bottom: 20px;
         /* 縦並びにした際の間隔 */
