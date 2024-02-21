@@ -1,39 +1,60 @@
-
 @charset "UTF-8";
 
-
-.container{
+.container {
     margin-left: 100px;
     margin-right: 100px;
 }
 
-.container .container_member h2{
+.container .container_member h2 {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.container .container_member .member_block{
+.container .container_member .member_block {
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.container .container_member .member_block .member{
-    width: 100;
+.container .container_member .member_block .member {
+    width: 100px;
+    /* 単位を追加 */
 }
 
-.container .container_member .member_block .member img{
+.container .container_member .member_block .member img {
     margin-bottom: 20px;
 }
 
-.container .container_member .member_block .member .ttl{
+.container .container_member .member_block .member .ttl {
     font-weight: bold;
     font-size: 18px;
 }
 
-.container .container_member .member_block .member .explain{
+.container .container_member .member_block .member .explain {
     margin-bottom: 20px;
+}
+
+/* スマートフォン向けのスタイル調整 */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container .container_member .member_block {
+        flex-direction: column;
+        /* アイテムを縦に並べる */
+        align-items: center;
+        /* アイテムを中央揃えに */
+    }
+
+    .container .container_member .member_block .member {
+        width: auto;
+        /* 幅を自動調整に変更 */
+        margin-bottom: 20px;
+        /* 縦並びにした際の間隔 */
+    }
 }

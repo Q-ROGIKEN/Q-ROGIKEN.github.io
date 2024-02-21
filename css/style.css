@@ -1,76 +1,118 @@
 @charset "UTF-8";
 
 /* ヘッダー */
-body{
-    font-family: "Hiragino Kaku Gothic Pro","Meiro",sans-serif;
+body {
+    font-family: "Hiragino Kaku Gothic Pro", "Meiro", sans-serif;
     font-size: 15px;
     border-top: 10px solid #e0a3d8ee !important;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
+
 a:hover {
     text-decoration: underline;
     color: rgb(110, 31, 128);
 }
 
-
-.logo{
+.logo {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-.logo img{
+.logo img {
     display: inline-block;
     width: 1200px;
+    /* スマホでの表示を考慮し、後ほど調整 */
     height: 80px;
+    /* 高さは固定値のままでもよいが、必要に応じて調整 */
 }
 
-.w_innner{
+.w_inner {
     width: 1200px;
+    /* スマホでの表示を考慮し、後ほど調整 */
     margin: 0 auto;
     background: #e0a3d8ee;
 }
 
-.header ul{
+.header ul {
     justify-content: center;
     align-items: center;
     display: flex;
     list-style-type: none;
 }
 
-.header ul li{
+.header ul li {
     width: 300px;
+    /* スマホでの表示を考慮し、後ほど調整 */
     text-align: center;
     border-right: 1px solid #ddd;
 }
-.header ul li:first-child{
+
+.header ul li:first-child {
     border-left: 1px solid #ddd;
 }
 
-.header ul li a{
+.header ul li a {
     display: block;
 }
 
-.header_img{
+.header_img {
     text-align: center;
-    
 }
 
-.header_img img{
+.header_img img {
     display: inline-block;
     width: 1200px;
+    /* スマホでの表示を考慮し、後ほど調整 */
     height: 200px;
+    /* 高さは固定値のままでもよいが、必要に応じて調整 */
 }
 
-
 /* フッター */
-.footer .copy{
+.footer .copy {
     text-align: center;
     background-color: pink;
-    color:black;
-    padding: 5px 0 5px
+    color: black;
+    padding: 5px 0;
+}
+
+/* スマートフォン向けのスタイル調整 */
+@media (max-width: 768px) {
+
+    .logo img,
+    .header_img img,
+    .w_inner {
+        width: 100%;
+        /* 画面幅に合わせて調整 */
+        height: auto;
+        /* 画像の縦横比を保持 */
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        width: 50px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .inline-block {
+        padding: 0;
+        text-align: center;
+    }
+
+    .inline-block li {
+        display: inline-block;
+    }
+
+    body {
+        font-size: 14px;
+        /* 小さなデバイスに合わせて文字サイズを調整 */
+    }
 }

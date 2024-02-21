@@ -1,50 +1,91 @@
 @charset "UTF-8";
 
+ /* コンテナ */
+ .container {
+     margin-left: 100px;
+     margin-right: 100px;
+ }
 
-/* コンテナ */
+ .container h3 {
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 18px;
+ }
 
-.container{
-    margin-left: 100px;
-    margin-right: 100px;
-}
+ .container_extask h2 {
+     text-align: center;
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 20px;
+ }
 
-.container h3{
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-}
+ .container_extask .task_block {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+ }
 
-.container_extask h2{
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+ .container_extask .task {
+     width: 380px;
+ }
 
-.container_extask .task_block{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
+ .container_extask .task img {
+     margin-bottom: 20px;
+ }
 
-.container_extask .task{
-    width: 380;
+ .container_extask .task .ttl {
+     font-weight: bold;
+     font-size: 18px;
+ }
 
-}
+ .container_extask .task .explain {
+     margin-bottom: 20px;
+ }
 
-.container_extask .task img{
-    margin-bottom: 20px;
-}
+ /* スマートフォン向けのスタイル */
+ @media (max-width: 768px) {
 
-.container_extask .task .ttl{
-    font-weight: bold;
-    font-size: 18px;
-}
+     .container {
+         margin-left: 20px;
+         margin-right: 20px;
+     }
 
-.container_extask .task .explain{
-    margin-bottom: 20px;
-}
+     .container h3 {
+         margin-left: 0px;
+         margin-right: 0px;
+         font-size: 16px;
+         /* スマホでは少し小さく */
+     }
 
+     .container_extask h2 {
+         font-size: 20px;
+         /* スマホでは少し小さく */
+     }
 
+     .container_extask .task_block {
+         flex-direction: column;
+         /* スマホではタスクを縦並びに */
+     }
+
+     .container_extask .task {
+         width: auto;
+         /* スマホではタスクの幅を自動調整 */
+         margin-bottom: 20px;
+         /* タスク間のスペース */
+     }
+
+     .container_extask .task img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: block;
+     }
+
+     .container_extask .task .ttl,
+     .container_extask .task .explain {
+         font-size: 16px;
+         /* スマホでは少し小さく */
+     }
+ }
