@@ -33,6 +33,7 @@
 
  .container_extask .task img {
      margin-bottom: 20px;
+     object-fit: cover;
  }
 
  .container_extask .task .ttl {
