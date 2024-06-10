@@ -44,6 +44,65 @@
  .container_extask .task .explain {
      margin-bottom: 20px;
  }
+ 
+.container_news {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container_news h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.news_block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.news:hover {
+    background-color: #f0f0f0;
+}
+
+.news .ttl {
+    font-weight: bold;
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.news .explain {
+    flex-basis: 70%;
+    text-align: left;
+    color: #555;
+}
+
+.highlight-link {
+    color: #ff0000;
+    /* 文字色を赤に設定 */
+    font-weight: bold;
+    /* 文字を太字に設定 */
+}
 
  /* スマートフォン向けのスタイル */
  @media (max-width: 768px) {
