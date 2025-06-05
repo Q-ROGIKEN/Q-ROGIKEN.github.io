@@ -1,0 +1,8 @@
+---
+layout: default
+title: メンバーの高山、森がQREC主催のアイデアバトルに採択されました！
+date: 2024-06-10
+---
+
+メンバーの高山、森が QREC 主催のアイデアバトルに採択されました！
+詳しくは[こちら](https://qrec.kyushu-u.ac.jp/news/2024ib_adoption/)

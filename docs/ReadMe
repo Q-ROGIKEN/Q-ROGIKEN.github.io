@@ -1,0 +1,50 @@
+# フレームワーク
+jekyll+tailwindで構築しています
+
+#ファイル-フォルダ構成
+├── _config.yml
+├── _layouts/
+│    └── default.html
+├── _includes/
+│    ├── header.html
+│    └── footer.html
+├── assets/
+│    └── css/
+│         ├── tailwind.css         ← Tailwind 用のエントリーポイント
+│         ├── tailwind-output.css  ← CLI が出力する最終 CSS
+│         └── custom.css           ← （必要に応じて）独自スタイルを追加する用
+└── index.html
+
+
+- _config.yml
+  - jekyllの設定ファイル
+- _includes
+    - ヘッダーやフッターなどの共通部分を定義するファイル
+- _layouts
+    - ページのレイアウトを定義するファイル
+- _posts
+    - 記事のデータを格納するディレクトリ
+- _sass
+    - Sassの設定ファイル
+- assets
+    - 画像やJavaScript、CSSなどの静的ファイルを格納するディレクトリ
+- index.html
+    - トップページのHTMLファイル
+- package.json
+    - npmの設定ファイル
+    
+# Tailwind CSSのセットアップ
+npx @tailwindcss/cli \
+  -i ./assets/css/tailwind.css \
+  -o ./assets/css/tailwind-output.css \
+  --watch
+
+# Jekyllの起動
+bundle exec jekyll serve
+
+# Jekyllのビルド
+bundle exec jekyll build
+# Jekyllのデプロイ
+bundle exec jekyll build --destination ./docs
+# Jekyllのデプロイ（GitHub Pages）
+bundle exec jekyll build --destination ./docs --baseurl /<リポジトリ名>

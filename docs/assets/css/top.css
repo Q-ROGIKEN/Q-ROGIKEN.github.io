@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+ /* コンテナ */
+ .container {
+     margin-left: 100px;
+     margin-right: 100px;
+ }
+
+ .container h3 {
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     font-size: 18px;
+ }
+
+ .container_extask h2 {
+     text-align: center;
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 20px;
+ }
+
+ .container_extask .task_block {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+ }
+
+ .container_extask .task {
+     width: 380px;
+ }
+
+ .container_extask .task img {
+     margin-bottom: 20px;
+     object-fit: cover;
+ }
+
+ .container_extask .task .ttl {
+     font-weight: bold;
+     font-size: 18px;
+ }
+
+ .container_extask .task .explain {
+     margin-bottom: 20px;
+ }
+ 
+.container_news {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container_news h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.news_block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.news:hover {
+    background-color: #f0f0f0;
+}
+
+.news .ttl {
+    font-weight: bold;
+    flex-basis: 25%;
+    text-align: left;
+}
+
+.news .explain {
+    flex-basis: 70%;
+    text-align: left;
+    color: #555;
+}
+
+.highlight-link {
+    color: #ff0000;
+    /* 文字色を赤に設定 */
+    font-weight: bold;
+    /* 文字を太字に設定 */
+}
+
+ /* スマートフォン向けのスタイル */
+ @media (max-width: 768px) {
+
+     .container {
+         margin-left: 20px;
+         margin-right: 20px;
+     }
+
+     .container h3 {
+         margin-left: 0px;
+         margin-right: 0px;
+         font-size: 16px;
+         /* スマホでは少し小さく */
+     }
+
+     .container_extask h2 {
+         font-size: 20px;
+         /* スマホでは少し小さく */
+     }
+
+     .container_extask .task_block {
+         flex-direction: column;
+         /* スマホではタスクを縦並びに */
+     }
+
+     .container_extask .task {
+         width: auto;
+         /* スマホではタスクの幅を自動調整 */
+         margin-bottom: 20px;
+         /* タスク間のスペース */
+     }
+
+     .container_extask .task img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        display: block;
+     }
+
+     .container_extask .task .ttl,
+     .container_extask .task .explain {
+         font-size: 16px;
+         /* スマホでは少し小さく */
+     }
+ }

@@ -1,0 +1,139 @@
+<header class="bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="{{ '/' | relative_url }}" class="flex items-center">
+          <img
+            class="h-10 w-auto"
+            src="{{ '/assets/images/ROGO.jpg' | relative_url }}"
+            alt="ロボ技"
+          />
+          <span class="ml-3 text-xl font-semibold text-gray-800"> 九州大学ロボット技術研究会 </span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+        <a
+          href="{{ '/' | relative_url }}"
+          class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-700 hover:text-indigo-600 hover:border-indigo-600"
+        >
+          トップ
+        </a>
+        <a
+          href="{{ '/ROBOGO_task.html' | relative_url }}"
+          class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-700 hover:text-indigo-600 hover:border-indigo-600"
+        >
+          プロジェクト一覧
+        </a>
+        <a
+          href="{{ '/ROBOGI_member.html' | relative_url }}"
+          class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-700 hover:text-indigo-600 hover:border-indigo-600"
+        >
+          メンバー紹介
+        </a>
+        <!-- コメントアウトしていた項目を外すか必要に応じて復活 -->
+        <!-- <a
+          href="{{ '/ROBOGI_place.html' | relative_url }}"
+          class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-700 hover:text-indigo-600 hover:border-indigo-600"
+        >
+          活動場所
+        </a> -->
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="-mr-2 flex items-center sm:hidden">
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">メインメニューを開く</span>
+          <!-- メニューアイコン -->
+          <svg
+            id="icon-menu"
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <!-- クローズアイコン（非表示） -->
+          <svg
+            id="icon-close"
+            class="hidden h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <nav id="mobile-menu" class="sm:hidden hidden">
+    <div class="pt-2 pb-3 space-y-1">
+      <a
+        href="{{ '/' | relative_url }}"
+        class="block pl-3 pr-4 py-2 border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700 text-base font-medium"
+      >
+        トップ
+      </a>
+      <a
+        href="{{ '/ROBOGO_task.html' | relative_url }}"
+        class="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 text-gray-700 hover:text-gray-900 text-base font-medium"
+      >
+        プロジェクト一覧
+      </a>
+      <a
+        href="{{ '/ROBOGI_member.html' | relative_url }}"
+        class="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 text-gray-700 hover:text-gray-900 text-base font-medium"
+      >
+        メンバー紹介
+      </a>
+      <!-- 活動場所を復活する場合は次の行のコメントを外す -->
+      <!-- <a
+        href="{{ '/ROBOGI_place.html' | relative_url }}"
+        class="block pl-3 pr-4 py-2 border-l-4 border-transparent hover:bg-gray-50 hover:border-gray-300 text-gray-700 hover:text-gray-900 text-base font-medium"
+      >
+        活動場所
+      </a> -->
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconMenu = document.getElementById('icon-menu');
+      const iconClose = document.getElementById('icon-close');
+
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', !isHidden);
+        iconMenu.classList.toggle('hidden', !isHidden);
+        iconClose.classList.toggle('hidden', isHidden);
+      });
+    });
+  </script>
+</header>

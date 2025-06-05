@@ -1,0 +1,9 @@
+---
+layout: default
+title: メンバーの西村、森がQREC主催のC&Cに採択されました！
+date: 2025-05-19
+---
+
+メンバーの西村、森が QREC 主催の C&C に採択されました！
+詳しくは
+[こちら](https://qrec.kyushu-u.ac.jp/news/20250517_cc/)
