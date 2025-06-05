@@ -5,7 +5,7 @@ title: 九州大学ロボット技術研究会
 
 <div
   class="relative w-screen h-40 p-4 text-white bg-cover bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('/assets/images/haikei.jpg');"
+  style="background-image: url('assets/images/haikei.jpg');"
 >
   <!-- 黒半透明のオーバーレイ -->
   <div class="absolute inset-0 bg-black/75"></div>
