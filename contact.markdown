@@ -13,9 +13,9 @@ Contact
 <div class="text-center font-bold">Email</div>
 
 <div class="text-center">
-    <a href="mailto:quniv.robogi@gmail.com" class="hover:text-pink-600 transition">
-        quniv.robogi@gmail.com
-    </a>
+    <div class="hover:text-pink-600 transition">
+        quniv.robogi[at]gmail.com
+    </div>
 </div>
 
 <div class="text-center font-bold">X</div>

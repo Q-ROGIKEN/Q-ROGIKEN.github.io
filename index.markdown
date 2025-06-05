@@ -122,9 +122,9 @@ Contact
 <div class="text-center sm:text-right sm:pr-4 font-bold">Email</div>
 
 <div class="text-center sm:text-left sm:pl-4">
-    <a href="mailto:quniv.robogi@gmail.com" class="hover:text-pink-600 transition">
-        quniv.robogi@gmail.com
-    </a>
+    <div class="hover:text-pink-600 transition">
+        quniv.robogi[at]gmail.com
+    </div>
 </div>
 
 <div class="text-center sm:text-right sm:pr-4 font-bold">X</div>
