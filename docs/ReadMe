@@ -44,7 +44,8 @@ bundle exec jekyll serve
 
 # Jekyllのビルド
 bundle exec jekyll build
+
 # Jekyllのデプロイ
 bundle exec jekyll build --destination ./docs
-# Jekyllのデプロイ（GitHub Pages）
-bundle exec jekyll build --destination ./docs --baseurl /<リポジトリ名>
+
+/docsにビルドされた静的サイトが生成されます。
