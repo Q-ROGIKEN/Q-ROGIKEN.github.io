@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+.container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.container .container_task h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.container .container_task .task_block .task {
+    width: auto;
+    /* 幅の指定に単位を追加 */
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+.container .container_task .task_block .task img {
+    margin-bottom: 20px;
+}
+
+.container .container_task .task_block .task .ttl {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .container_task .task_block .task .explain {
+    margin-bottom: 5px;
+}
+
+/* スマートフォン向けのスタイル調整 */
+@media (max-width: 768px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container .container_task .task_block {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .container .container_task .task_block .task {
+        width: auto;
+        /* スマートフォン表示時には幅を自動調整 */
+        margin-bottom: 20px;
+        /* タスク間のマージンを調整 */
+        display: inline-block;
+        /* 中央揃えのためにinline-blockに変更 */
+    }
+
+    .container .container_task .task_block .task img {
+        margin: 0 auto;
+        /* 画像を中央揃え */
+        display: block;
+    }
+
+    .container .container_task .task_block .task .ttl,
+    .container .container_task .task_block .task .explain {
+        text-align: left;
+        /* テキストは左揃えに戻す */
+    }
+}

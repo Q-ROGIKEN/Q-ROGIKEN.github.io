@@ -49,8 +49,7 @@ Projects
     {% assign index = forloop.index0 %}
     <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
       {% if index > 2 %} block sm:block hidden {% endif %}">
-       <a href="{{ project.url | relative_url }}" class="block group h-full">
-        <div class="h-48 w-full">
+       <div class="h-48 w-full">
           <img src="{{ project.image | relative_url }}"
               alt="{{ project.title }}"
               class="w-full h-full object-cover" />
@@ -60,7 +59,6 @@ Projects
             {{ project.title }}
           </h3>
         </div>
-      </a> 
       <!-- 個別のサイトにリンクを貼ったバージョン<a href="{{ project.url | relative_url }}" class="block group h-full">
         <div class="h-48 w-full">
           <img src="{{ project.image | relative_url }}"

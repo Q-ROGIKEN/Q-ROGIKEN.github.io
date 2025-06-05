@@ -12,8 +12,7 @@ Projects
     {% assign sorted_projects = site.projects | sort: "date" | reverse %}
     {% for project in sorted_projects %}
     <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg">
-        <a href="{{ project.url | relative_url }}" class="block group h-full">
-        <div class="h-48 w-full">
+       <div class="h-48 w-full">
           <img src="{{ project.image | relative_url }}"
               alt="{{ project.title }}"
               class="w-full h-full object-cover" />
@@ -23,7 +22,6 @@ Projects
             {{ project.title }}
           </h3>
         </div>
-        </a> 
     </div>
     {% endfor %}
   </div>
