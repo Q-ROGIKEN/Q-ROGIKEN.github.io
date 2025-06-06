@@ -5,8 +5,7 @@ image: /assets/images/HIKOROBO.png
 layout: default
 ---
 
-{: .h1}
-{{page.title}}
+{% include large_title.html src=page.image label=page.title%}
 
 <div class="w-full h-[300px] overflow-hidden">
   <img

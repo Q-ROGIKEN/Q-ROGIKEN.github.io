@@ -3,18 +3,7 @@ layout: default
 title: 九州大学ロボット技術研究会
 ---
 
-<div
-  class="relative w-screen h-40 p-4 text-white bg-cover bg-center bg-no-repeat flex items-center justify-center"
-  style="background-image: url('assets/images/haikei.jpg');"
->
-  <!-- 黒半透明のオーバーレイ -->
-  <div class="absolute inset-0 bg-black/75"></div>
-
-  <!-- テキスト本体 -->
-  <div class="relative z-10 text-[3rem] writing-horizontal" style="font-family: var(--font-lubri)">
-    九州大学ロボット技術研究会
-  </div>
-</div>
+{% include large_title.html src="/assets/images/haikei.jpg" label="九州大学ロボット技術研究会"%}
 
 {: .h1}
 About Us
@@ -60,25 +49,13 @@ Projects
             {{ project.title }}
           </h3>
         </div>
-      </a> 
-      <!-- 個別のサイトにリンクを貼ったバージョン<a href="{{ project.url | relative_url }}" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="{{ project.image | relative_url }}"
-              alt="{{ project.title }}"
-              class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            {{ project.title }}
-          </h3>
-        </div>
-      </a> -->
+      </a>
     </div>
   {% endfor %}
 </div>
 </section>
 
-{% include pink_button.html href="/projects/" label="プロジェクト一覧へ"%}
+{% include pink_button.html href="/projects/" label="All Projects"%}
 
 {: .h1}
 Members
@@ -111,7 +88,7 @@ Members
   </div>
 </section>
 
-{% include pink_button.html href="/members/" label="メンバー一覧へ" %}
+{% include pink_button.html href="/members/" label="All Members" %}
 
 {: .h1}
 Contact
