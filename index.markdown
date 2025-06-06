@@ -29,7 +29,7 @@ What's New
 </ul>
 
 {: .h1}
-Projects
+[Projects](/projects)
 
 <section class="container mx-auto px-4 py-4">
   <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -58,7 +58,7 @@ Projects
 {% include pink_button.html href="/projects/" label="All Projects"%}
 
 {: .h1}
-Members
+[Members](/members)
 
 <section class="container mx-auto px-4 py-4">
   <div class="flex flex-wrap justify-around gap-6">
@@ -91,7 +91,7 @@ Members
 {% include pink_button.html href="/members/" label="All Members" %}
 
 {: .h1}
-Contact
+[Contact](/contact)
 
 <div class="flex flex-wrap justify-center">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg font-medium text-gray-700">
