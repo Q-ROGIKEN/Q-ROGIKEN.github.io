@@ -3,6 +3,7 @@ title: 飛行ロボコン
 date: 2025-05-20
 image: /assets/images/HIKOROBO.png
 layout: default
+status: current
 ---
 
 {% include large_title.html src=page.image label=page.title%}

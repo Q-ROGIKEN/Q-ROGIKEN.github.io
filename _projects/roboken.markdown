@@ -3,6 +3,7 @@ title: ロボ剣
 date: 2025-05-20
 image: /assets/images/ROBOKEN.jpg
 layout: default
+status: current
 ---
 
 {: .h1}

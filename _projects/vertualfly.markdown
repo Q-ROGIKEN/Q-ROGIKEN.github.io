@@ -3,6 +3,7 @@ title: 【未踏事業】バーチャル空間における飛翔体験
 date: 2025-05-20
 image: /assets/images/MITO.png
 layout: default
+status: past
 ---
 
 {: .h1}

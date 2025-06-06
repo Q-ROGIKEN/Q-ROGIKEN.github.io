@@ -3,6 +3,7 @@ title: ワインディングマシーン
 date: 2025-05-20
 image: /assets/images/WINDING_machine.jpg
 layout: default
+status: current
 ---
 
 {: .h1}

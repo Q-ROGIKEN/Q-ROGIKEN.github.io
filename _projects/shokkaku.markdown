@@ -3,6 +3,7 @@ title: ミツバチ触覚を用いた匂いセンサー
 date: 2025-06-05
 image: /assets/images/shokkaku.jpg
 layout: default
+status: current
 ---
 
 {: .h1}
