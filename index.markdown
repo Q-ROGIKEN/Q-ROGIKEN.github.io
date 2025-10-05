@@ -3,7 +3,7 @@ layout: default
 title: 九州大学ロボット技術研究会
 ---
 
-{% include large_title.html src="/assets/images/haikei.jpg" label="九州大学ロボット技術研究会"%}
+{% include large_title.html src="/assets/images/Makaizo.jpeg" label="九州大学ロボット技術研究会"%}
 
 {: .h1}
 About Us
