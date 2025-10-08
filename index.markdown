@@ -26,13 +26,11 @@ About Us
 {: .h1}
 [Projects](/projects)
 
-<section class="container mx-auto px-4 py-4">
-  <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+<section class="container mx-auto px-4 py-4 max-w-[860px]">
+  <div class="grid gap-6 sm:grid-cols-2">
   {% assign sorted_projects = site.projects | sort: "date" | reverse %}
   {% for project in sorted_projects limit:2 %}
-    {% assign index = forloop.index0 %}
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-      {% if index > 2 %} block sm:block hidden {% endif %}">
+    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg">
        <a href="{{ project.url | relative_url }}" class="block group h-full">
         <div class="h-48 w-full">
           <img src="{{ project.image | relative_url }}"
@@ -55,7 +53,7 @@ About Us
 {: .h1}
 [Members](/members)
 
-<section class="container mx-auto px-4 py-4">
+<section class="container mx-auto px-4 py-4 max-w-[860px]">
   <div class="flex flex-wrap justify-around gap-6">
 
 <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg flex flex-col flex-1 items-center text-center p-6">
