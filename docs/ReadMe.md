@@ -2,6 +2,15 @@
 
 jekyll+tailwind で構築しています
 
+# 編集方法
+
+- 通常の更新は アンダーバー付きのディレクトリ（\_news や \_projects など）内のファイル編集で行います。
+- 新しいニュースやプロジェクトを追加する際は、既存の Markdown ファイルをコピーして内容を書き換えてください。
+- それらの内容は、ルート直下の news.markdown や projects.markdown から自動的に読み込まれます。
+- docs/ フォルダ内はビルド後の出力先なので、直接編集しないでください。
+- 画像などは assets/images フォルダに配置してください。
+  わからないことがあれば soyhayatomx[at]gmail.com まで。
+
 # 実行手順
 
 1. Tailwind CSS のビルド
@@ -21,7 +30,7 @@ bundle exec jekyll serve
 
 3. 静的サイトのビルド
 
-良さそうなら以下コマンドでビルドし、GitHub の main ブランチで push してください。
+内容に満足したら以下コマンドでビルドし、GitHub の main ブランチで push してください。
 
 bundle exec jekyll build
 
@@ -29,14 +38,8 @@ bundle exec jekyll build
 
 ├── \_config.yml
 ├── \_data/
-│ └── members.json
 ├── \_includes/
-│ ├── footer.html
-│ ├── header.html
-│ ├── large_title.html
-│ └── pink_button.html
 ├── \_layouts/
-│ └── default.html
 ├── \_news/  
 ├── \_projects/  
 ├── assets/  
@@ -62,17 +65,17 @@ bundle exec jekyll build
 - **\_data/**  
   構造化データを配置するディレクトリ。テンプレートから `site.data` で参照します。
 
-  - `members.json`: メンバー情報。
+  - `members.json` など
 
 - **\_includes/**  
   ページ共通の部品を配置します。`{% include %}` で読み込み。
 
-  - `header.html`, `footer.html`, `title.html`, `button.html` など。
+  - `header.html`, `footer.html`, `title.html`, `button.html` など
 
 - **\_layouts/**  
   ページのレイアウトテンプレート。各ページの Front Matter の `layout` で指定。
 
-  - `default.html` など。
+  - `default.html` など
 
 - **\_news/**  
   ニュース記事の Markdown を格納するコレクション／カテゴリー用ディレクトリ。
@@ -110,12 +113,3 @@ bundle exec jekyll build
 
 - **ビルド出力先**  
   通常 Jekyll の出力先は \_site/ ですが、本プロジェクトでは GitHub Pages に対応させるため、\_config.yml で destination: docs と指定し、docs/ に静的サイトを出力しています。これにより、\_site/ は通常は使用しません。
-
-# 編集手順
-
-- 通常の更新は アンダーバー付きのディレクトリ（\_news や \_projects など）内のファイル編集で行います。
-- 新しいニュースやプロジェクトを追加する際は、既存の Markdown ファイルをコピーして内容を書き換えてください。
-- それらの内容は、ルート直下の news.markdown や projects.markdown から自動的に読み込まれます。
-- docs/ フォルダ内はビルド後の出力先なので、直接編集しないでください。
-- 画像などは assets/images フォルダに配置してください。
-  わからないことがあれば soyhayatomx[at]gmail.com まで。
