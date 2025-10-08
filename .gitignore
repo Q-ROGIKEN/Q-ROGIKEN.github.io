@@ -13,4 +13,4 @@ Thumbs.db
 .env.*
 .vscode/
 .idea/
-*.swp
+*.swp.DS_Store
