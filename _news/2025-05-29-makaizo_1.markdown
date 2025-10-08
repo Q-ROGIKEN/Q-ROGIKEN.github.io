@@ -2,4 +2,5 @@
 layout: default
 title: NHK魔改造の夜第一夜が放送されました！
 date: 2025-05-29
+has_article: False
 ---

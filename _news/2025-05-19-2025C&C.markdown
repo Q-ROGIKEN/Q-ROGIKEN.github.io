@@ -2,6 +2,7 @@
 layout: default
 title: メンバーの西村、森がQREC主催のC&Cに採択されました！
 date: 2025-05-19
+has_article: False
 ---
 
 メンバーの西村、森が QREC 主催の C&C に採択されました！

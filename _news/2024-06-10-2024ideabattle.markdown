@@ -2,6 +2,7 @@
 layout: default
 title: メンバーの高山、森がQREC主催のアイデアバトルに採択されました！
 date: 2024-06-10
+has_article: False
 ---
 
 メンバーの高山、森が QREC 主催のアイデアバトルに採択されました！

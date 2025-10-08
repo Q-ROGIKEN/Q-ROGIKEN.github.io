@@ -2,4 +2,5 @@
 layout: default
 title: NHK魔改造の夜第二夜が放送されました！
 date: 2025-08-08
+has_article: False
 ---

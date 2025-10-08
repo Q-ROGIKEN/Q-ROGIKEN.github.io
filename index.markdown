@@ -3,30 +3,25 @@ layout: default
 title: 九州大学ロボット技術研究会
 ---
 
-{% include large_title.html src="/assets/images/Makaizo.jpeg" label="九州大学ロボット技術研究会"%}
+{% include large_title.html
+    src="/assets/images/Makaizo.jpeg"
+    label="九州大学ロボット技術研究会"
+    copyright="「魔改造の夜」― NHK"
+%}
 
 {: .h1}
 About Us
 
 {: .main-text}
-ようこそ, 九州大学ロボット技術研究会へ.
-私たちは九大伊都キャンパスでものづくり活動を行っている団体です.
-様々なコンテストでの優勝を目指して活動しています.
+ようこそ、九州大学ロボット技術研究会へ。
+私たちは、九州大学伊都キャンパスを拠点にものづくり活動を行っている団体です。
+自らのアイデアを形にしたい方や、ものづくりコンテストでの優勝を目指したい方の参加を歓迎しています。
 
 {: .h1}
-What's New
+[News](/news)
 
-<ul class="space-y-6">
-    {% assign sorted_news = site.news | sort: "date" | reverse %}
-    {% for post in sorted_news %}
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">{{ post.date | date: "%Y/%m/%d" }}</div>
-        <div class="font-semibold text-gray-800">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+{% include news_list.html limit=3 %}
+{% include pink_button.html href="/news/" label="More News" %}
 
 {: .h1}
 [Projects](/projects)
@@ -34,7 +29,7 @@ What's New
 <section class="container mx-auto px-4 py-4">
   <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
   {% assign sorted_projects = site.projects | sort: "date" | reverse %}
-  {% for project in sorted_projects %}
+  {% for project in sorted_projects limit:2 %}
     {% assign index = forloop.index0 %}
     <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
       {% if index > 2 %} block sm:block hidden {% endif %}">
@@ -55,7 +50,7 @@ What's New
 </div>
 </section>
 
-{% include pink_button.html href="/projects/" label="All Projects"%}
+{% include pink_button.html href="/projects/" label="More Projects"%}
 
 {: .h1}
 [Members](/members)
@@ -88,7 +83,7 @@ What's New
   </div>
 </section>
 
-{% include pink_button.html href="/members/" label="All Members" %}
+{% include pink_button.html href="/members/" label="More Members" %}
 
 {: .h1}
 [Contact](/contact)

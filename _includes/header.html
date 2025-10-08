@@ -17,7 +17,7 @@
     <!-- ロゴ -->
     <a
       href="{{ '/' | relative_url }}"
-      class="flex px-4 items-center justify-center md:justify-start mb-4 md:mb-0"
+      class="flex px-2 items-center justify-center md:justify-start mb-4 md:mb-0"
     >
       <img
         class="h-8 md:h-10 w-auto"
@@ -28,9 +28,10 @@
 
     <!-- ナビゲーション -->
     <nav
-      class="flex flex-wrap divide-x divide-gray-400 text-center font-semibold text-sm md:text-base"
+      class="flex flex-wrap divide-x divide-gray-400 text-center font-semibold text-sm md:text-base md:mr-2"
     >
       <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
+      <a href="{{ '/news/' | relative_url }}" class="nav-link">News</a>
       <a href="{{ '/projects/' | relative_url }}" class="nav-link">Projects</a>
       <a href="{{ '/members/' | relative_url }}" class="nav-link">Members</a>
       <a href="{{ '/contact/' | relative_url }}" class="nav-link">Contact</a>

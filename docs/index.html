@@ -42,7 +42,7 @@
     <!-- ロゴ -->
     <a
       href="/"
-      class="flex px-4 items-center justify-center md:justify-start mb-4 md:mb-0"
+      class="flex px-2 items-center justify-center md:justify-start mb-4 md:mb-0"
     >
       <img
         class="h-8 md:h-10 w-auto"
@@ -53,9 +53,10 @@
 
     <!-- ナビゲーション -->
     <nav
-      class="flex flex-wrap divide-x divide-gray-400 text-center font-semibold text-sm md:text-base"
+      class="flex flex-wrap divide-x divide-gray-400 text-center font-semibold text-sm md:text-base md:mr-2"
     >
       <a href="/" class="nav-link">Home</a>
+      <a href="/news/" class="nav-link">News</a>
       <a href="/projects/" class="nav-link">Projects</a>
       <a href="/members/" class="nav-link">Members</a>
       <a href="/contact/" class="nav-link">Contact</a>
@@ -65,60 +66,69 @@
 
 
     <main class="mx-auto"><div class="relative w-screen h-60 p-4 text-white bg-cover bg-center bg-no-repeat flex items-start justify-center" style="background-image: url('/assets/images/Makaizo.jpeg')">
+  <!-- 背景の暗幕 -->
   <div class="absolute inset-0 bg-black/30"></div>
 
+  <!-- タイトル -->
   <div class="relative z-10 text-[3rem] writing-horizontal" style="font-family: var(--font-lubri)">
     九州大学ロボット技術研究会
   </div>
+
+  <!-- コピーライト（指定があるときだけ表示）-->
+  
+  <div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-xs text-gray-400 bg-black/40 px-2 py-0.5 rounded">
+    © 「魔改造の夜」― NHK
+  </div>
+  
 </div>
 
 <p class="h1">About Us</p>
 
-<p class="main-text">ようこそ, 九州大学ロボット技術研究会へ.
-私たちは九大伊都キャンパスでものづくり活動を行っている団体です.
-様々なコンテストでの優勝を目指して活動しています.</p>
+<p class="main-text">ようこそ、九州大学ロボット技術研究会へ。
+私たちは、九州大学伊都キャンパスを拠点にものづくり活動を行っている団体です。
+自らのアイデアを形にしたい方や、ものづくりコンテストでの優勝を目指したい方の参加を歓迎しています。</p>
 
-<p class="h1">What’s New</p>
+<p class="h1"><a href="/news">News</a></p>
 
-<ul class="space-y-6">
+<ul class="space-y-6 py-4">
+   
+  <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
+    <div class="text-sm text-gray-500 mb-1">2025/10/08</div>
+    <div class="font-semibold text-gray-800">
+      <a href="/news/2025-10-08-kyachirobo/">キャチロボベスト8、審査員特別賞受賞！</a>
+    </div>
     
+    <div class="mt-2">
+      <a href="/news/2025-10-08-kyachirobo/" class="inline-block text-pink-600 border border-pink-500 text-sm px-3 py-1 rounded hover:bg-pink-50 transition-colors duration-200">
+        記事を読む
+      </a>
+    </div>
     
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">2025/08/08</div>
-        <div class="font-semibold text-gray-800">
-            <a href="/news/2025-08-08-makaizo-2/">NHK魔改造の夜第二夜が放送されました！</a>
-        </div>
-    </li>
+  </li>
+  
+  <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
+    <div class="text-sm text-gray-500 mb-1">2025/08/08</div>
+    <div class="font-semibold text-gray-800">
+      <a href="/news/2025-08-08-makaizo-2/">NHK魔改造の夜第二夜が放送されました！</a>
+    </div>
     
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">2025/06/03</div>
-        <div class="font-semibold text-gray-800">
-            <a href="/news/2025-06-05-site-renewal/">サイトをリニューアルしました</a>
-        </div>
-    </li>
+  </li>
+  
+  <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
+    <div class="text-sm text-gray-500 mb-1">2025/06/03</div>
+    <div class="font-semibold text-gray-800">
+      <a href="/news/2025-06-05-site-renewal/">サイトをリニューアルしました</a>
+    </div>
     
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">2025/05/29</div>
-        <div class="font-semibold text-gray-800">
-            <a href="/news/2025-05-29-makaizo-1/">NHK魔改造の夜第一夜が放送されました！</a>
-        </div>
-    </li>
-    
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">2025/05/19</div>
-        <div class="font-semibold text-gray-800">
-            <a href="/news/2025-05-19-2025c-c/">メンバーの西村、森がQREC主催のC&amp;Cに採択されました！</a>
-        </div>
-    </li>
-    
-    <li class="mx-8 sm:mx-24 max-w-800 border-l-4 border-pink-500 bg-gray-50 shadow p-4 rounded-md">
-        <div class="text-sm text-gray-500 mb-1">2024/06/10</div>
-        <div class="font-semibold text-gray-800">
-            <a href="/news/2024-06-10-2024ideabattle/">メンバーの高山、森がQREC主催のアイデアバトルに採択されました！</a>
-        </div>
-    </li>
-    
+  </li>
+  
 </ul>
+
+<div class="flex justify-center my-2">
+  <a href="/news/" class="px-18 py-4 rounded-full bg-pink-400 text-white text-center text-lg hover:bg-pink-500 transition" style="font-family: var(--font-lubri)">
+    <div class="arrow">More News</div>
+  </a>
+</div>
 
 <p class="h1"><a href="/projects">Projects</a></p>
 
@@ -156,87 +166,12 @@
       </a>
     </div>
   
-    
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-      ">
-       <a href="/projects/vertualfly/" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="/assets/images/MITO.png" alt="【未踏事業】バーチャル空間における飛翔体験" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            【未踏事業】バーチャル空間における飛翔体験
-          </h3>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-       block sm:block hidden ">
-       <a href="/projects/roboken/" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="/assets/images/ROBOKEN.jpg" alt="ロボ剣" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            ロボ剣
-          </h3>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-       block sm:block hidden ">
-       <a href="/projects/kyachirobo/" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="/assets/images/KYATIROBO.JPG" alt="キャチロボ" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            キャチロボ
-          </h3>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-       block sm:block hidden ">
-       <a href="/projects/hikorobo/" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="/assets/images/HIKOROBO.png" alt="飛行ロボコン" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            飛行ロボコン
-          </h3>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="bg-white rounded-2xl shadow-md overflow-hidden transition hover:shadow-lg 
-       block sm:block hidden ">
-       <a href="/projects/fudo/" class="block group h-full">
-        <div class="h-48 w-full">
-          <img src="/assets/images/huudou.png" alt="風洞" class="w-full h-full object-cover" />
-        </div>
-        <div class="p-4 text-center">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-pink-500 transition">
-            風洞
-          </h3>
-        </div>
-      </a>
-    </div>
-  
 </div>
 </section>
 
 <div class="flex justify-center my-2">
   <a href="/projects/" class="px-18 py-4 rounded-full bg-pink-400 text-white text-center text-lg hover:bg-pink-500 transition" style="font-family: var(--font-lubri)">
-    <div class="arrow">All Projects</div>
+    <div class="arrow">More Projects</div>
   </a>
 </div>
 
@@ -268,7 +203,7 @@
 
 <div class="flex justify-center my-2">
   <a href="/members/" class="px-18 py-4 rounded-full bg-pink-400 text-white text-center text-lg hover:bg-pink-500 transition" style="font-family: var(--font-lubri)">
-    <div class="arrow">All Members</div>
+    <div class="arrow">More Members</div>
   </a>
 </div>
 
